@@ -22,7 +22,7 @@ const Indbox = () => {
     try {
       setloader(true);
       let res = await fetch(
-        `https://mail-box-ea204-default-rtdb.firebaseio.com/${mail}indbox.json`
+        `https://mail-box-c9bcb-default-rtdb.firebaseio.com/${mail}indbox.json`
       );
       let data = await res.json();
       let arr = [];
@@ -51,7 +51,7 @@ const Indbox = () => {
     // post to trash
     try {
       const response = await fetch(
-        `https://mail-box-ea204-default-rtdb.firebaseio.com/${mail}trashMail.json`,
+        `https://mail-box-c9bcb-default-rtdb.firebaseio.com/${mail}trashMail.json`,
         {
           method: "POST",
           body: JSON.stringify(val),
@@ -70,7 +70,7 @@ const Indbox = () => {
 
     try {
       const res = await fetch(
-        `https://mail-box-ea204-default-rtdb.firebaseio.com/${mail}indbox/${val.id}.json`,
+        `https://mail-box-c9bcb-default-rtdb.firebaseio.com/${mail}indbox/${val.id}.json`,
         {
           method: "DELETE",
           headers: {

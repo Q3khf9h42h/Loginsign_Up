@@ -19,7 +19,7 @@ const TrashMail = () => {
     try {
       setloader(true);
       const response = await fetch(
-        `https://mail-box-ea204-default-rtdb.firebaseio.com/${email}trashMail.json`
+        `https://mail-box-c9bcb-default-rtdb.firebaseio.com/${email}trashMail.json`
       );
       let data = await response.json();
       console.log(data);
@@ -53,7 +53,7 @@ const TrashMail = () => {
       if (result.isConfirmed) {
         try {
           const res = await fetch(
-            `https://mail-box-ea204-default-rtdb.firebaseio.com/${email}trashMail/${id}.json`,
+            `https://mail-box-c9bcb-default-rtdb.firebaseio.com/${email}trashMail/${id}.json`,
             {
               method: "DELETE",
               headers: {

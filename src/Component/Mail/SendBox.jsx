@@ -21,7 +21,7 @@ const SendBox = () => {
     try {
       setloader(true);
       let res = await fetch(
-        `https://mail-box-ea204-default-rtdb.firebaseio.com/${mail}sentMailbox.json`
+        `https://mail-box-c9bcb-default-rtdb.firebaseio.com/${mail}sentMailbox.json`
       );
       let data = await res.json();
       let arr = [];
@@ -44,7 +44,7 @@ const SendBox = () => {
     console.log(id);
     try {
       const res = await fetch(
-        `https://mail-box-ea204-default-rtdb.firebaseio.com/${mail}sentMailbox/${id}.json`,
+        `https://mail-box-c9bcb-default-rtdb.firebaseio.com/${mail}sentMailbox/${id}.json`,
         {
           method: "DELETE",
           headers: {
