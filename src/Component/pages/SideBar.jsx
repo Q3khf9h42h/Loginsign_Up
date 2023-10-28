@@ -97,12 +97,12 @@ const Sidebar = () => {
           <CDBSidebarMenu>
             <CDBSidebarMenuItem>
               <RiMailUnreadLine />
-              <Link to="/email"> IndBox ({unread})</Link>
+              <Link to="/email"> Inbox ({unread})</Link>
             </CDBSidebarMenuItem>
 
             <CDBSidebarMenuItem>
               <BsSend />
-              <Link to="/sendmail"> SendBox</Link>
+              <Link to="/sendmail"> Sent</Link>
             </CDBSidebarMenuItem>
 
             <CDBSidebarMenuItem>
